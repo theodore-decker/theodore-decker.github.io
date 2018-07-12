@@ -1,2 +1,4 @@
 theme: jekyll-theme-minimal
 title: Theodore Decker
+show_downloads: true
+logo: /assests/img/logo.png
