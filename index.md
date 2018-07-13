@@ -2,7 +2,7 @@
 layout: default
 ---
 
-[RESUME](/docs/DECKER_Theodore-Resume7.12.18.pdf)
+##[RESUME](/docs/DECKER_Theodore-Resume7.12.18.pdf)
 
 
 ## About Me
@@ -11,7 +11,7 @@ This is about me
 
 ## Experience
 
-This is where i've work and accomplished
+This is where i have worked and accomplished
 
 ## Projects
 
