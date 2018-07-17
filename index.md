@@ -7,29 +7,23 @@ layout: default
 
 ## About Me
 
-This is about meee
+N/A
 
 ## Experience
 
-This is where i have worked and accomplished
+N/A
 
 ## Projects
 
-Deez my projects
+N/A
 
 ```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
+// N/A
 ```
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
+```python
+# N/A
 ```
 
 ## More
+N/A
