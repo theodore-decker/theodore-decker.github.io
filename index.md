@@ -49,6 +49,8 @@ with open(args.sensors_input_path[0], 'r') as input, open('data/sensors.csv', 'w
                 cdmArrays(sensorsStr, sensorsArr)
 ```
 
+Full project available on [Git Repository](https://github.com/theodore-decker/bah-summer-work/blob/bah-summer/walkIndex/inputData.py)
+
 ```js
 // N/A
 ```
