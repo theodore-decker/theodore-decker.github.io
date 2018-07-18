@@ -8,17 +8,7 @@ I am a fourth year student at The Pennsylvania State University with an expected
 
 ## Projects
 
-These sections of python code were taken from a project that gathered two separate .csv files and sliced them together to make one master .csv file that would fit a desired format for visualization.
-
-```python
-
-```
-
-```python
-
-```
-
-
+Working on rewriting code to fit a public library that will display methods previously used in a classified field
 
 ```js
 // N/A
