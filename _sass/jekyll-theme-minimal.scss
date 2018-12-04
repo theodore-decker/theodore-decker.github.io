@@ -25,7 +25,7 @@ h1, h2, h3 {
 
 h1 {
   font-size:28px;
-  padding-bottom: 25px
+  padding-bottom: 25px;
 }
 
 h2 {
@@ -108,9 +108,9 @@ img {
 
 header {
   width:270px;
+  position: fixed;
   left: 50px;
   top: 50px:
-  position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
