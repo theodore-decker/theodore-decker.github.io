@@ -5,11 +5,8 @@ layout: default
 # About Me
 
 I am a fourth year student at The Pennsylvania State University studying Security and Risk Analysis with a minor in Information Sciences and Technology. During my years at Penn State, I have enjoyed my time playing for the Club Water Polo team and participating in THON each year. I am currently employed by Booz Allen Hamilton and am looking forward to expanding my technical experience in the following years. Please check out some of my projects below and reach out to me with any questions or concerns!
-#
-#
+
 # Projects
-
-
 
 ## Creating Cyber Labs
 One of my proudest achievements at Penn State involved my efforts to create a new club in the College of Information Sciences and Technology. Cyber Labs was formed in order to help both freshmen and upperclassmen expand on their education within the new Cyber Operations major at Penn State. The executive board and I sought out to teach students important systems in the world of cyber security such as Kali Linux, Metasploit, and command line.
