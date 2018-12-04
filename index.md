@@ -14,8 +14,7 @@ One of my proudest achievements at Penn State involved my efforts to create a ne
 
 ## Javascript Data Visualization Using D3
 
-### Example borrowed from Jim Vallandingham
-
+Temporary non-proprietary example borrowed from Jim Vallandingham
 
 ```js
 function createNodes(rawData) {
@@ -59,7 +58,7 @@ Here, I used D3, a Javascript library, to organize a large dataset into usable n
 
 ## Data Organization using Python
 
-### Temporary non-proprietary example
+Temporary non-proprietary example
 
 
 ```python
