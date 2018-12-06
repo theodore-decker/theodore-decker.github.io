@@ -53,7 +53,7 @@ function createNodes(rawData) {
 }
 ```
 
-Here, I used D3, a Javascript library, to organize a large dataset into usable nodes for later visualization
+In this snippet of code, I used D3, a data visualization library used within Javascript. These specific lines are used to organize a large dataset into usable nodes for later visualization. 
 
 
 ## Data Organization using Python
