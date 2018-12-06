@@ -8,11 +8,11 @@ I am a fourth year student at The Pennsylvania State University studying Securit
 
 # Projects
 
-## Creating Cyber Labs
+### Creating Cyber Labs
 One of my proudest achievements at Penn State involved my efforts to create a new club in the College of Information Sciences and Technology. Cyber Labs was formed in order to help both freshmen and upperclassmen expand on their education within the new Cyber Operations major at Penn State. The executive board and I sought out to teach students important systems in the world of cyber security such as Kali Linux, Metasploit, and command line.
 
 
-## Javascript Data Visualization Using D3
+### Javascript Data Visualization Using D3
 
 Temporary non-proprietary example borrowed from Jim Vallandingham
 
@@ -56,7 +56,7 @@ function createNodes(rawData) {
 Here, I used D3, a Javascript library, to organize a large dataset into usable nodes for later visualization
 
 
-## Data Organization using Python
+### Data Organization using Python
 
 Temporary non-proprietary example
 
