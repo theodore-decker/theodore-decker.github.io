@@ -78,7 +78,3 @@ newData.close()
 # Previous Experience
 
 N/A
-
-# More
-
-N/A
