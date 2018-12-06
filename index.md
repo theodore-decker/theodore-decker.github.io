@@ -4,7 +4,7 @@ layout: default
 
 # About Me
 
-I am a fourth year student at The Pennsylvania State University studying Security and Risk Analysis with a minor in Information Sciences and Technology. During my years at Penn State, I have enjoyed my time playing for the Club Water Polo team and participating in THON each year. I am currently employed by Booz Allen Hamilton and am looking forward to expanding my technical experience in the following years. Please check out some of my projects below and reach out to me with any questions or concerns!
+I am a fourth year student at The Pennsylvania State University studying Security and Risk Analysis with a minor in Information Sciences and Technology. During my years at Penn State, I have enjoyed my time playing for the Club Water Polo team and participating in THON each year. I am currently employed by Booz Allen Hamilton and am looking forward to expanding my technical experience in the following years. Please check out some of my projects below and feel free to learn what I'm all about in the bio section!
 
 # Projects
 
@@ -53,7 +53,7 @@ function createNodes(rawData) {
 }
 ```
 
-In this snippet of code, I used D3, a data visualization library used within Javascript. These specific lines are used to organize a large dataset into usable nodes for later visualization. 
+In this snippet of code, I used D3, a data visualization library used within Javascript. These specific lines are used to organize a large dataset into usable nodes for later visualization.
 
 
 ## Data Organization using Python
