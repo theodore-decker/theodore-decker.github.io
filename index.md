@@ -2,9 +2,9 @@
 layout: default
 ---
 
-# About Me
+# Welcome
 
-I am a fourth year student at The Pennsylvania State University studying Security and Risk Analysis with a minor in Information Sciences and Technology. During my years at Penn State, I have enjoyed my time playing for the Club Water Polo team and participating in THON each year. I am currently employed by Booz Allen Hamilton and am looking forward to expanding my technical experience in the following years. Please check out some of my projects below and feel free to learn what I'm all about in the bio section!
+I am a fourth year student at The Pennsylvania State University studying Security and Risk Analysis with a minor in Information Sciences and Technology. I am currently employed by Booz Allen Hamilton and am eager to expand my technical experience in the following years. Please check out some of my projects below and feel free to look into what I'm all about in the bio section!
 
 # Projects
 
@@ -75,6 +75,10 @@ open('/Documents/GitHub/newData.csv', 'w') as newData
 newData.close()
 ```
 
-# Previous Experience
+# About Me
 
-N/A
+While there may many computer science students out there with similar and/or a more advanced technical background than me, I bring more to the table than clean lines of code.
+
+I am extremely dedicated and carry a strong work ethic with every challenge I tackle. My previous summer work experience as a caddy is a testament to my ability to develop interpersonal relationships. Having worked on the golf course every summer since the 7th grade, I've picked up important communication skills that helped me stand out from the ordinary caddy. In 2015, at the age of 19, the head professional of Philadelphia Country named me Caddy of the Year.
+
+While I love working the field of Cyber Security, I feel my strengths extend to a degree an average software developer does not posses. With the cyber security world becoming a necessity for any large business or firm, I feel the world needs people who can not only do the technical work, but communicate its imortance as well. 
