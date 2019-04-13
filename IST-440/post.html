@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Page Title -->
+    <title>Post</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/images/logo/favicon.png" type="image/x-icon">
+
+    <!-- Javascript -->
+    <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
+    <script src="assets/js/vendor/bootstrap-4.1.3.min.js"></script>
+    <script src="assets/js/vendor/wow.min.js"></script>
+    <script src="assets/js/vendor/owl-carousel.min.js"></script>
+    <script src="assets/js/vendor/jquery.nice-select.min.js"></script>
+    <script src="assets/js/vendor/ion.rangeSlider.js"></script>
+    <script src="assets/js/main.js"></script>
+
+    <!-- CSS Files-->
+    <link rel="stylesheet" href="assets/css/animate-3.7.0.css">
+    <link rel="stylesheet" href="assets/css/font-awesome-4.7.0.min.css">
+    <link rel="stylesheet" href="assets/fonts/flat-icon/flaticon.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-4.1.3.min.css">
+    <link rel="stylesheet" href="assets/css/owl-carousel.min.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header-area single-page">
+        <div class="header-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="logo-area">
+                            <a href="index.html" style="font-size: 40px; color: White; font-weight: bold;">Cyber Projects</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="custom-navbar">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="main-menu main-menu-light">
+                            <ul>
+                                <li class="active"><a href="index.html">home</a></li>
+                                <li><a href="post.html">post</a></li>
+                                <li><a href="about.html">about us</a></li>
+                                <li><a href="contact-us.html">contact</a></li>
+                                <li class="menu-btn">
+                                    <!-- Input our custom login -->
+                                    <!-- Replace all # with html of login -->
+                                    <a href="#" class="login">log in</a>
+                                    <a href="#" class="template-btn">sign up</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header -->
+
+    <div class="serach-area section-padding2">
+        <div class="container">
+            <form>
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                      <label for="inputTitle">Project Title</label>
+                      <input type="text" class="form-control" id="inputTitle" placeholder="Organization or Employer">
+                    </div>
+                    <div class="form-group col-md-6">
+                      <label for="inputLocation">Location</label>
+                      <input type="text" class="form-control" id="inputLocation" placeholder="City, State | Online">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputSkills">Required Skills</label>
+                    <input type="text" class="form-control" id="inputSkills" placeholder="Network Management, Security Analysis, Mobile Development, etc.">
+                  </div>
+                  <div class="form-group">
+                    <label for="inputDescription">Breif Description</label>
+                    <textarea type="text" class="form-control" id="inputDescription" placeholder="Details on project expectations" rows="3"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <label for="inputDeadline">Deadline</label>
+                    <input type="text" class="form-control" id="inputDeadline" placeholder="January 1, 2020">
+                  </div>
+                  <div class="form-group">
+                    <label for="inputAddInfo">Additonal Information</label>
+                    <input type="text" class="form-control" id="inputAddInfo" placeholder="">
+                  </div>
+                  <button type="button" onclick="post()" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+    <section class="jobs-area section-padding3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div id="0">
+                        <div class="single-job mb-4 d-lg-flex justify-content-between">
+                            <div id="newPost" class="job-text">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>
