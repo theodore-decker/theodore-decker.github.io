@@ -4,7 +4,7 @@ layout: default
 
 # Welcome
 
-I am a fourth year student at The Pennsylvania State University studying Security and Risk Analysis with a minor in Information Sciences and Technology. I am currently employed by Booz Allen Hamilton and am eager to expand my technical experience in the following years. Please check out some of my projects below and feel free to look into what I'm all about in the bio section!
+I am a graduate from The Pennsylvania State University with a bachelors of science in Security and Risk Analysis and a minor in Information Sciences and Technology. I am currently employed by Booz Allen Hamilton and am eager to expand my technical experience in the following years. Please check out some of my projects below and feel free to look into what I'm all about in the bio section!
 
 # Projects
 
@@ -56,23 +56,37 @@ function createNodes(rawData) {
 In this snippet of code, I used D3, a data visualization library used within Javascript. These specific lines are used to organize a large dataset into usable nodes for later visualization.
 
 
-## Data Organization using Python
+## Image Classifier
 
-Temporary non-proprietary example
+Using Anaconda, Jupyter Notebook, and the Fast.ai library
+
+Below, is the python used to create an image classifier that identifies 200 different Untied States bird species with an accuracy of about 75%
 
 
 ```python
-import os
-# Read file
-open('/Documents/GitHub/rawData.csv', 'r') as rawData
+#Load Libraries
+from fastai import *
+from fastai.vision import *
+from fastai.metrics import error_rate
 
-# Edit file
- for line in rawData:
-     print("NEW DATA")
+#Assign batch size
+bs=64
 
-# Write file
-open('/Documents/GitHub/newData.csv', 'w') as newData
-newData.close()
+#Untar and set directory for data
+path = untar_data('https://s3.amazonaws.com/fast-ai-imageclas/CUB_200_2011',fname='/home/ubuntu/course-v3/nbs/dl1/birds/CUB_200_2011.tgz.tar', dest='/home/ubuntu/course-v3/nbs/dl1/birds');
+
+#Functions called to bunch data elements together in a usable format
+tfms = get_transforms(do_flip=False)
+data = ImageDataBunch.from_folder(path, ds_tfms=tfms, valid_pct=.02, bs=bs, size=224).normalize(imagenet_stats)
+
+#Assign the model and metrics used to learn
+learn = cnn_learner(data, models.resnet34, metrics=error_rate)
+
+#Model the assigned convolutional neural network
+learn.model
+
+#Run the model twice with a learning rate between 1e-6 and 1e-4
+learn.fit_one_cycle(2, max_lr=slice(1e-6,1e-4))
 ```
 
 # About Me
@@ -81,4 +95,4 @@ While there may many computer science students out there with similar and/or a m
 
 I am extremely dedicated and carry a strong work ethic with every challenge I tackle. My previous summer work experience as a caddy is a testament to my ability to develop interpersonal relationships. Having worked on the golf course every summer since the 7th grade, I've picked up important communication skills that helped me stand out from the ordinary caddy. In 2015, at the age of 19, the head professional of Philadelphia Country named me Caddy of the Year.
 
-While I love working the field of Cyber Security, I feel my strengths extend to a degree an average software developer does not posses. With the cyber security world becoming a necessity for any large business or firm, I feel the world needs people who can not only do the technical work, but communicate its importance as well.
+While I love working the field of Cyber Security, I feel my strengths extend to a degree an average software developer does not possess. With the cyber security world becoming a necessity for any large business or firm, I feel the world needs people who can not only do the technical work, but communicate its importance as well.
