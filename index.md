@@ -12,6 +12,39 @@ I am a graduate from The Pennsylvania State University with a bachelors of scien
 One of my proudest achievements at Penn State involved my efforts to create a new club in the College of Information Sciences and Technology. Cyber Labs was formed in order to help both freshmen and upperclassmen expand on their education within the new Cyber Operations major at Penn State. The executive board and I sought out to teach students important systems in the world of cyber security such as Kali Linux, Metasploit, and command line.
 
 
+## Image Classifier
+
+Using Anaconda, Jupyter Notebook, and the Fast.ai library
+
+Below, is the python used to create an image classifier that identifies 200 different Untied States bird species with an accuracy of about 86%
+
+
+```python
+#Load Libraries
+from fastai import *
+from fastai.vision import *
+from fastai.metrics import error_rate
+
+#Assign batch size
+bs=64
+
+#Untar and set directory for data
+path = untar_data('https://s3.amazonaws.com/fast-ai-imageclas/CUB_200_2011',fname='/home/ubuntu/course-v3/nbs/dl1/birds/CUB_200_2011.tgz.tar', dest='/home/ubuntu/course-v3/nbs/dl1/birds');
+
+#Functions called to bunch data elements together in a usable format
+tfms = get_transforms(do_flip=False)
+data = ImageDataBunch.from_folder(path, ds_tfms=tfms, valid_pct=.02, bs=bs, size=224).normalize(imagenet_stats)
+
+#Assign the model and metrics used to learn
+learn = cnn_learner(data, models.resnet50, metrics=error_rate)
+
+#Model the assigned convolutional neural network
+learn.model
+
+#Run the model twice with a learning rate between 1e-6 and 1e-4
+learn.fit_one_cycle(6, max_lr=slice(1e-5,1e-4))
+```
+
 ## Javascript Data Visualization Using D3
 
 Temporary non-proprietary example borrowed from Jim Vallandingham
@@ -56,38 +89,6 @@ function createNodes(rawData) {
 In this snippet of code, I used D3, a data visualization library used within Javascript. These specific lines are used to organize a large dataset into usable nodes for later visualization.
 
 
-## Image Classifier
-
-Using Anaconda, Jupyter Notebook, and the Fast.ai library
-
-Below, is the python used to create an image classifier that identifies 200 different Untied States bird species with an accuracy of about 75%
-
-
-```python
-#Load Libraries
-from fastai import *
-from fastai.vision import *
-from fastai.metrics import error_rate
-
-#Assign batch size
-bs=64
-
-#Untar and set directory for data
-path = untar_data('https://s3.amazonaws.com/fast-ai-imageclas/CUB_200_2011',fname='/home/ubuntu/course-v3/nbs/dl1/birds/CUB_200_2011.tgz.tar', dest='/home/ubuntu/course-v3/nbs/dl1/birds');
-
-#Functions called to bunch data elements together in a usable format
-tfms = get_transforms(do_flip=False)
-data = ImageDataBunch.from_folder(path, ds_tfms=tfms, valid_pct=.02, bs=bs, size=224).normalize(imagenet_stats)
-
-#Assign the model and metrics used to learn
-learn = cnn_learner(data, models.resnet34, metrics=error_rate)
-
-#Model the assigned convolutional neural network
-learn.model
-
-#Run the model twice with a learning rate between 1e-6 and 1e-4
-learn.fit_one_cycle(2, max_lr=slice(1e-6,1e-4))
-```
 
 # About Me
 
