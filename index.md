@@ -16,7 +16,9 @@ One of my proudest achievements at Penn State involved my efforts to create a ne
 
 Using Anaconda, Jupyter Notebook, and the Fast.ai library
 
-Below, is the python used to create an image classifier that identifies 200 different Untied States bird species with an accuracy of about 86%
+Below, is the code used to create an image classifier that identifies 200 different Untied States bird species with an accuracy of about 86%
+
+Check out the classifier [here](https://bird-v5jf.onrender.com).
 
 
 ```python
@@ -41,7 +43,7 @@ learn = cnn_learner(data, models.resnet50, metrics=error_rate)
 #Model the assigned convolutional neural network
 learn.model
 
-#Run the model twice with a learning rate between 1e-6 and 1e-4
+#Fit the model 6 times with a learning rate between 1e-6 and 1e-4s
 learn.fit_one_cycle(6, max_lr=slice(1e-5,1e-4))
 ```
 
