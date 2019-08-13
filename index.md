@@ -16,7 +16,7 @@ One of my proudest achievements at Penn State involved my efforts to create a ne
 
 Using Anaconda, Jupyter Notebook, and the Fast.ai library
 
-Below, is the code used to create an image classifier that identifies 200 different Untied States bird species with an accuracy of about 86%
+Below, is the code used to create an image classifier that identifies 200 different Untied States bird species with an accuracy of about 86%. In order to reach this threshold, the model was originally trained without any specifications for 4 cycles. Once finished, I used "learn.recorder()" in order to determine the appropriate learning rate for the model. At a learning rate between 1e-5 and 1e-4, I found the largest slope of negative loss. After 6 more cycles at this learning rate, the model increased its accruacy by 8%.
 
 <p><a class="smaller" href="https://bird-v5jf.onrender.com"> Check out the classifier in production!</a></p>
 
@@ -46,6 +46,7 @@ learn.model
 #Fit the model 6 times with a learning rate between 1e-6 and 1e-4s
 learn.fit_one_cycle(6, max_lr=slice(1e-5,1e-4))
 ```
+
 
 ## Javascript Data Visualization Using D3
 
