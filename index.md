@@ -18,7 +18,8 @@ Using Anaconda, Jupyter Notebook, and the Fast.ai library
 
 Below, is the code used to create an image classifier that identifies 200 different Untied States bird species with an accuracy of about 86%
 
-Check out the classifier [here](https://bird-v5jf.onrender.com).
+<p> Check out the classifier <a class="a small" href="https://bird-v5jf.onrender.com">here</a>.</p>
+Check out the classifier [here](https://bird-v5jf.onrender.com)
 
 
 ```python
